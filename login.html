@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="images/logo.png" alt="AKUM Logo" class="login-logo">
+                <h1>AKUM H.I.R 2024 CLASS Portal</h1>
+                <p>History & International Relations</p>
+                <p class="institution-name">Abdulkadir Kure University, Minna</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="matricNumber">Matric Number</label>
+                    <input 
+                        type="text" 
+                        id="matricNumber" 
+                        placeholder="e.g., AKU24/FE/HIS/1001" 
+                        required
+                    >
+                    <span class="error-message" id="matricError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="rememberMe">
+                        <input type="checkbox" id="rememberMe">
+                        Remember me for 30 days
+                    </label>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Issues accessing? <a href="mailto:abubakarnurudeen072188@gmail.com">Contact Administrator</a></p>
+            </div>
+        </div>
+
+        <div class="theme-toggle-login">
+            <button id="themeToggleLogin" class="theme-btn" title="Toggle dark mode">
+                🌙
+            </button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
